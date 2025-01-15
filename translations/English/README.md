@@ -6,7 +6,6 @@ Real-Time is a Filterscript for SA-MP (San Andreas Multiplayer) that synchronize
 
 - Português: [README](../../)
 - Deutsch: [README](../Deutsch/README.md)
-- English: [README](../English/README.md)
 - Español: [README](../Espanol/README.md)
 - Français: [README](../Francais/README.md)
 - Italiano: [README](../Italiano/README.md)
