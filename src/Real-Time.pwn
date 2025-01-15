@@ -45,7 +45,7 @@ public OnFilterScriptInit() {
 
     SetTimer("TRF_UpdateWorldTime", TRF_UPDATE_INTERVAL, true);
 
-    return 1;
+    return true;
 }
 
 public OnFilterScriptExit()
