@@ -49,12 +49,12 @@ filterscripts Real-Time
 Система работает через оптимизированный таймер, который проверяет текущее время каждые 5 секунд. Ниже приведен фрагмент кода, демонстрирующий, как выполняется проверка:
 
 ```pawn
-#define TRF_UPDATE_INTERVAL  5*1000 // Обновление каждые 5 секунд
-#define TRF_DAWN_TIME        5 // 00:00 - 05:59 -> 05:00
-#define TRF_MORNING_TIME     7 // 06:00 - 10:59 -> 07:00
-#define TRF_NOON_TIME        12 // 11:00 - 15:59 -> 12:00
-#define TRF_EVENING_TIME     20 // 16:00 - 17:59 -> 20:00
-#define TRF_NIGHT_TIME       0 // 18:00 - 23:59 -> 00:00
+#define TRF_UPDATE_INTERVAL  (5*1000) // Обновление каждые 5 секунд
+#define TRF_DAWN_TIME        (5) // 00:00 - 05:59 -> 05:00
+#define TRF_MORNING_TIME     (7) // 06:00 - 10:59 -> 07:00
+#define TRF_NOON_TIME        (12) // 11:00 - 15:59 -> 12:00
+#define TRF_EVENING_TIME     (20) // 16:00 - 17:59 -> 20:00
+#define TRF_NIGHT_TIME       (0) // 18:00 - 23:59 -> 00:00
 ```
 
 ### Система времени

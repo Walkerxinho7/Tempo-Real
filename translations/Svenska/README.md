@@ -49,12 +49,12 @@ filterscripts Real-Time
 Systemet fungerar genom en optimerad timer som kontrollerar aktuell tid var 5:e sekund. Nedan är ett kodexempel som visar hur kontrollen utförs:
 
 ```pawn
-#define TRF_UPDATE_INTERVAL  5*1000 // Uppdaterar var 5:e sekund
-#define TRF_DAWN_TIME        5 // 00:00 - 05:59 -> 05:00
-#define TRF_MORNING_TIME     7 // 06:00 - 10:59 -> 07:00
-#define TRF_NOON_TIME        12 // 11:00 - 15:59 -> 12:00
-#define TRF_EVENING_TIME     20 // 16:00 - 17:59 -> 20:00
-#define TRF_NIGHT_TIME       0 // 18:00 - 23:59 -> 00:00
+#define TRF_UPDATE_INTERVAL  (5*1000) // Uppdaterar var 5:e sekund
+#define TRF_DAWN_TIME        (5) // 00:00 - 05:59 -> 05:00
+#define TRF_MORNING_TIME     (7) // 06:00 - 10:59 -> 07:00
+#define TRF_NOON_TIME        (12) // 11:00 - 15:59 -> 12:00
+#define TRF_EVENING_TIME     (20) // 16:00 - 17:59 -> 20:00
+#define TRF_NIGHT_TIME       (0) // 18:00 - 23:59 -> 00:00
 ```
 
 ### Tidssystem
