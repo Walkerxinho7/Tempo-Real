@@ -31,7 +31,7 @@ Real-Time est un Filterscript pour SA-MP (San Andreas Multiplayer) qui synchroni
 
 ## Installation
 
-1. Téléchargez le fichier `Real-Time.amx`
+1. Téléchargez le fichier [Real-Time.amx](https://github.com/ocalasans/Real-Time/raw/refs/heads/main/src/Real-Time.amx)
 2. Copiez le fichier dans le dossier `filterscripts` de votre serveur
 3. Modifiez le fichier `server.cfg`
 4. Ajoutez `Real-Time` à la ligne `filterscripts`

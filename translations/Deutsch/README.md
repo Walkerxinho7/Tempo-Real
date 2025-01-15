@@ -31,7 +31,7 @@ Real-Time ist ein Filterscript für SA-MP (San Andreas Multiplayer), das die Spi
 
 ## Installation
 
-1. Laden Sie die Datei `Real-Time.amx` herunter
+1. Laden Sie die Datei [Real-Time.amx](https://github.com/ocalasans/Real-Time/raw/refs/heads/main/src/Real-Time.amx) herunter
 2. Kopieren Sie die Datei in den `filterscripts`-Ordner Ihres Servers
 3. Bearbeiten Sie die Datei `server.cfg`
 4. Fügen Sie `Real-Time` in der Zeile `filterscripts` hinzu

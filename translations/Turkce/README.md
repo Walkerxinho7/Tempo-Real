@@ -31,7 +31,7 @@ Real-Time, SA-MP (San Andreas Multiplayer) için gerçek zamanı oyun zamanıyla
 
 ## Kurulum
 
-1. `Real-Time.amx` dosyasını indirin
+1. [Real-Time.amx](https://github.com/ocalasans/Real-Time/raw/refs/heads/main/src/Real-Time.amx) dosyasını indirin
 2. Dosyayı sunucunuzun `filterscripts` klasörüne kopyalayın
 3. `server.cfg` dosyasını düzenleyin
 4. `filterscripts` satırına `Real-Time` ekleyin
