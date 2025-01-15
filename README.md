@@ -15,6 +15,7 @@ O Real-Time é um Filterscript para SA-MP (San Andreas Multiplayer) que sincroni
 - Turk: [README](translations/Turkce/README.md)
 
 ## Índice
+
 - [Real-Time](#real-time)
   - [Idiomas](#idiomas)
   - [Índice](#índice)
@@ -58,6 +59,7 @@ O sistema opera através de um timer otimizado que verifica o horário atual a c
 ```
 
 ### Sistema de Horários
+
 O Filterscript utiliza as seguintes conversões de tempo:
 - **Madrugada**: 00:00 - 05:59 → 05:00 no jogo
 - **Manhã**: 06:00 - 10:59 → 07:00 no jogo
@@ -71,6 +73,7 @@ O Filterscript utiliza as seguintes conversões de tempo:
 ## Casos de Uso
 
 ### Ideal para:
+
 1. **Servidores RolePlay**
    - Aumenta o realismo
    - Sincroniza eventos do servidor com horários reais
@@ -89,6 +92,7 @@ O Filterscript utiliza as seguintes conversões de tempo:
 ## Detalhes Técnicos
 
 ### Otimizações Implementadas
+
 ```pawn
 // Variável global para evitar atualizações desnecessárias
 static TRF_Last_WorldTime = -1;
@@ -111,6 +115,7 @@ public TRF_UpdateWorldTime() {
 ```
 
 ### Características principais:
+
 - Cache do último horário para evitar atualizações redundantes
 - Timer otimizado para reduzir o uso de recursos
 - Compatibilidade total com outros filterscripts
@@ -128,6 +133,7 @@ Este Filterscript está protegido sob a Licença Apache 2.0, que permite:
 - ✔️ Concessão de patentes
 
 ### Condições:
+
 - Manter o aviso de direitos autorais
 - Documentar alterações significativas
 - Incluir cópia da licença Apache 2.0

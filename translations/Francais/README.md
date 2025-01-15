@@ -14,20 +14,21 @@ Real-Time est un Filterscript pour SA-MP (San Andreas Multiplayer) qui synchroni
 - Svenska: [README](../Svenska/README.md)
 - Türkçe: [README](../Turkce/README.md)
 
-## Sommaire
+## Index
+
 - [Real-Time](#real-time)
   - [Langues](#langues)
-  - [Sommaire](#sommaire)
+  - [Index](#index)
   - [Installation](#installation)
   - [Fonctionnement Technique](#fonctionnement-technique)
     - [Système Horaire](#système-horaire)
   - [Cas d'Utilisation](#cas-dutilisation)
-    - [Idéal pour :](#idéal-pour-)
+    - [Idéal pour:](#idéal-pour)
   - [Détails Techniques](#détails-techniques)
     - [Optimisations Implémentées](#optimisations-implémentées)
-    - [Caractéristiques Principales :](#caractéristiques-principales-)
+    - [Caractéristiques Principales:](#caractéristiques-principales)
   - [Licence](#licence)
-    - [Conditions :](#conditions-)
+    - [Conditions:](#conditions)
 
 ## Installation
 
@@ -36,7 +37,7 @@ Real-Time est un Filterscript pour SA-MP (San Andreas Multiplayer) qui synchroni
 3. Modifiez le fichier `server.cfg`
 4. Ajoutez `Real-Time` à la ligne `filterscripts`
 
-**Exemple de configuration dans server.cfg :**
+**Exemple de configuration dans server.cfg:**
 ```
 filterscripts Real-Time
 ```
@@ -46,7 +47,7 @@ filterscripts Real-Time
 
 ## Fonctionnement Technique
 
-Le système fonctionne grâce à un minuteur optimisé qui vérifie l'heure actuelle toutes les 5 secondes. Voici un extrait de code qui démontre comment la vérification est effectuée :
+Le système fonctionne grâce à un minuteur optimisé qui vérifie l'heure actuelle toutes les 5 secondes. Voici un extrait de code qui démontre comment la vérification est effectuée:
 
 ```pawn
 #define TRF_UPDATE_INTERVAL  (5*1000) // Mise à jour toutes les 5 secondes
@@ -58,19 +59,21 @@ Le système fonctionne grâce à un minuteur optimisé qui vérifie l'heure actu
 ```
 
 ### Système Horaire
-Le Filterscript utilise les conversions de temps suivantes :
-- **Aube** : 00:00 - 05:59 → 05:00 en jeu
-- **Matin** : 06:00 - 10:59 → 07:00 en jeu
-- **Après-midi** : 11:00 - 15:59 → 12:00 en jeu
-- **Soir** : 16:00 - 17:59 → 20:00 en jeu
-- **Nuit** : 18:00 - 23:59 → 00:00 en jeu
+
+Le Filterscript utilise les conversions de temps suivantes:
+- **Aube**: 00:00 - 05:59 → 05:00 en jeu
+- **Matin**: 06:00 - 10:59 → 07:00 en jeu
+- **Après-midi**: 11:00 - 15:59 → 12:00 en jeu
+- **Soir**: 16:00 - 17:59 → 20:00 en jeu
+- **Nuit**: 18:00 - 23:59 → 00:00 en jeu
 
 > [!NOTE]
 > Le système utilise `gettime()` pour obtenir l'heure actuelle du serveur. Il est crucial que votre serveur soit configuré avec le bon fuseau horaire.
 
 ## Cas d'Utilisation
 
-### Idéal pour :
+### Idéal pour:
+
 1. **Serveurs RolePlay**
    - Augmente le réalisme
    - Synchronise les événements du serveur avec les heures réelles
@@ -89,6 +92,7 @@ Le Filterscript utilise les conversions de temps suivantes :
 ## Détails Techniques
 
 ### Optimisations Implémentées
+
 ```pawn
 // Variable globale pour éviter les mises à jour inutiles
 static TRF_Last_WorldTime = -1;
@@ -110,7 +114,8 @@ public TRF_UpdateWorldTime() {
 }
 ```
 
-### Caractéristiques Principales :
+### Caractéristiques Principales:
+
 - Cache de la dernière heure pour éviter les mises à jour redondantes
 - Minuteur optimisé pour réduire l'utilisation des ressources
 - Compatibilité totale avec d'autres filterscripts
@@ -120,18 +125,19 @@ public TRF_UpdateWorldTime() {
 
 ## Licence
 
-Ce Filterscript est protégé sous la licence Apache License 2.0, qui permet :
+Ce Filterscript est protégé sous la licence Apache License 2.0, qui permet:
 
 - ✔️ Utilisation commerciale et privée
 - ✔️ Modification du code source
 - ✔️ Distribution du code
 - ✔️ Octroi de brevet
 
-### Conditions :
+### Conditions:
+
 - Maintenir l'avis de droit d'auteur
 - Documenter les changements significatifs
 - Inclure une copie de la licence Apache License 2.0
 
-Pour plus de détails sur la licence : http://www.apache.org/licenses/LICENSE-2.0
+Pour plus de détails sur la licence: http://www.apache.org/licenses/LICENSE-2.0
 
 **Copyright (c) Calasans - Tous droits réservés**

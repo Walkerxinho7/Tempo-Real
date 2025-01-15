@@ -15,6 +15,7 @@ Real-Time, SA-MP (San Andreas Multiplayer) için gerçek zamanı oyun zamanıyla
 - Svenska: [README](../Svenska/README.md)
 
 ## İçindekiler
+
 - [Real-Time](#real-time)
   - [Diller](#diller)
   - [İçindekiler](#i̇çindekiler)
@@ -58,6 +59,7 @@ Sistem, mevcut zamanı her 5 saniyede bir kontrol eden optimize edilmiş bir zam
 ```
 
 ### Zaman Sistemi
+
 Filterscript aşağıdaki zaman dönüşümlerini kullanır:
 - **Şafak**: 00:00 - 05:59 → Oyunda 05:00
 - **Sabah**: 06:00 - 10:59 → Oyunda 07:00
@@ -71,6 +73,7 @@ Filterscript aşağıdaki zaman dönüşümlerini kullanır:
 ## Kullanım Alanları
 
 ### İdeal Kullanım Alanları:
+
 1. **RolePlay Sunucuları**
    - Gerçekçiliği artırır
    - Sunucu etkinliklerini gerçek zamanla senkronize eder
@@ -89,6 +92,7 @@ Filterscript aşağıdaki zaman dönüşümlerini kullanır:
 ## Teknik Detaylar
 
 ### Uygulanan Optimizasyonlar
+
 ```pawn
 // Gereksiz güncellemeleri önlemek için global değişken
 static TRF_Last_WorldTime = -1;
@@ -111,6 +115,7 @@ public TRF_UpdateWorldTime() {
 ```
 
 ### Ana Özellikler:
+
 - Gereksiz güncellemeleri önlemek için son zamanın önbelleğe alınması
 - Kaynak kullanımını azaltmak için optimize edilmiş zamanlayıcı
 - Diğer filterscript'lerle tam uyumluluk
@@ -128,6 +133,7 @@ Bu Filterscript, Apache License 2.0 kapsamında korunmaktadır ve şunlara izin 
 - ✔️ Patent izni
 
 ### Koşullar:
+
 - Telif hakkı bildirimini koruyun
 - Önemli değişiklikleri belgeleyin
 - Apache License 2.0'ın bir kopyasını ekleyin
