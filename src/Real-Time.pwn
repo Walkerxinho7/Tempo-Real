@@ -19,12 +19,12 @@
 
 #include <a_samp>
 
-#define TRF_UPDATE_INTERVAL  5*1000
-#define TRF_DAWN_TIME        5
-#define TRF_MORNING_TIME     7
-#define TRF_NOON_TIME        12
-#define TRF_EVENING_TIME     20
-#define TRF_NIGHT_TIME       0
+#define TRF_UPDATE_INTERVAL  (5*1000)
+#define TRF_DAWN_TIME        (5)
+#define TRF_MORNING_TIME     (7)
+#define TRF_NOON_TIME        (12)
+#define TRF_EVENING_TIME     (20)
+#define TRF_NIGHT_TIME       (0)
 
 static TRF_Last_WorldTime = -1;
 
