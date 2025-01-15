@@ -1,5 +1,5 @@
 /*
- * Real-Time Filterscript for SA-MP
+ * Real-Time Filterscript for SA-MP (San Andreas Multiplayer)
  * Copyright (c) Calasans
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
