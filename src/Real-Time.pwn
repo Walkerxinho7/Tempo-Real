@@ -29,7 +29,7 @@
 static TRF_Last_WorldTime = -1;
 
 public OnFilterScriptInit() {
-    print("");
+    print(" ");
     print("__________________________________________________________________");
     print("||==============================================================||");
     print("||                                                              ||");
@@ -41,7 +41,7 @@ public OnFilterScriptInit() {
     print("||                                                              ||");
     print("||==============================================================||");
     print("__________________________________________________________________");
-    print("");
+    print(" ");
 
     SetTimer("TRF_UpdateWorldTime", TRF_UPDATE_INTERVAL, true);
 
